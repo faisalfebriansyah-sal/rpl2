@@ -1,58 +1,38 @@
 import 'package:flutter/material.dart';
-// import 'package:rpl2/container_widget/LatihanContainer.dart';
-// import 'package:rpl2/row_column_widget/RowWidget.dart';
-// import 'package:rpl2/row_column_widget/ColumnWidget.dart';
-// import 'package:rpl2/container_widget/Biodata.dart';
-// import 'package:rpl2/container_widget/ContainerSatu.dart';
-// import 'package:rpl2/container_widget/Latihan.dart';
-// import 'package:rpl2/expanded_widget/ExpandedWidget.dart';
-// import 'package:rpl2/expanded_widget/StackWidget.dart';
-// import 'package:rpl2/container_widget/TwitterProfilePage.dart';
-import 'package:rpl2/sized_expanded_stack/LayoutSatu.dart';
-import 'package:rpl2/sized_expanded_stack/LayoutDua.dart';
-import 'package:rpl2/sized_expanded_stack/LayoutTiga.dart';
-import 'package:rpl2/sized_expanded_stack/LatihanLayout.dart';
-
+// import 'package:hello/container/Containersatu.dart';
+// import 'package:hello/container/LatihanContainer.dart';
+// import 'package:hello/row_column/ColumnWidget.dart';
+// import 'package:hello/row_column/LatihanRowColumn.dart';
+// import 'package:hello/row_column/RowColumnWidget.dart';
+// import 'package:hello/row_column/RowWidget.dart';
+// import 'package:hello/sized_expanded_stack/ExpandedWidget.dart';
+// import 'package:hello/sized_expanded_stack/LatihanLayout.dart';
+// import 'package:hello/sized_expanded_stack/LayoutDua.dart';
+// import 'package:hello/sized_expanded_stack/LayoutEmpat.dart';
+// import 'package:hello/sized_expanded_stack/Layoutsatu.dart';
+// import 'package:hello/sized_expanded_stack/SizedBoxWidget.dart';
+// import 'package:hello/sized_expanded_stack/StackWidget.dart';
+// import 'package:rpl2/sized_expanded_stack/LayoutTiga.dart';
+// import 'package:rpl2/list_grid_view/grid_basic_.dart';
+// import 'package:rpl2/list_grid_view/grid_screen.dart';
+import 'package:rpl2/list_grid_view/instragram.dart';
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+  // const MyApp({Key? key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter Pertamaku",
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text("RPL 2"),
-          backgroundColor: Colors.blue,
-          centerTitle: true,
-        ),
-        body: LatihanLayout(),
-        // bottomNavigationBar: const LabelKelas(),
-      ),
-    );
-  }
-}
-
-class HelloWidget extends StatelessWidget {
-  const HelloWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        "Hello Flutter",
-        style: TextStyle(
-          color: Colors.indigo,
-          fontSize: 24,
-          fontWeight: FontWeight.bold,
-          backgroundColor: Colors.yellowAccent,
-          fontStyle: FontStyle.italic,
-        ),
+        // appBar: AppBar(
+        //   title: Text("Flutter App"),
+        //   backgroundColor: const Color.fromARGB(255, 69, 67, 64),
+        //   centerTitle: true,
+        // ),
+        body:const LayoutInstragram(),
       ),
     );
   }
