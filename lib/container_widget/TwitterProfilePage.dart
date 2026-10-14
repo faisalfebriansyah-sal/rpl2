@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class TwitterProfileScreen extends StatelessWidget {
   const TwitterProfileScreen({Key? key}) : super(key: key);
 
@@ -35,7 +36,9 @@ class TwitterProfileScreen extends StatelessWidget {
                           radius: 18,
                           child: IconButton(
                             icon: const Icon(Icons.arrow_back, color: Colors.white, size: 20),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
                           ),
                         ),
                         Row(
@@ -175,6 +178,13 @@ class TwitterProfileScreen extends StatelessWidget {
                 ],
               ),
             ),
+            Text('Halaman About'),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: Text('Kembali ke Halaman Home'),
+          ),
           ],
         ),
       ),

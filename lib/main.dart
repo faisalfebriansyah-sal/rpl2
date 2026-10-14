@@ -15,7 +15,9 @@ import 'package:flutter/material.dart';
 // import 'package:rpl2/sized_expanded_stack/LayoutTiga.dart';
 // import 'package:rpl2/list_grid_view/grid_basic_.dart';
 // import 'package:rpl2/list_grid_view/grid_screen.dart';
-import 'package:rpl2/list_grid_view/instragram.dart';
+// import 'package:rpl2/list_grid_view/instragram.dart';
+import 'package:rpl2/routes/app_routes.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -26,14 +28,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        // appBar: AppBar(
-        //   title: Text("Flutter App"),
-        //   backgroundColor: const Color.fromARGB(255, 69, 67, 64),
-        //   centerTitle: true,
-        // ),
-        body:const LayoutInstragram(),
-      ),
+      initialRoute: "/",
+      routes: AppRoutes.routes,
     );
   }
 }
